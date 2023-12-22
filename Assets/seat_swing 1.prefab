@@ -12,7 +12,6 @@ GameObject:
   - component: {fileID: 4807613132553983857}
   - component: {fileID: 6905613796906995259}
   - component: {fileID: 6636580383358827074}
-  - component: {fileID: 6127382481608539318}
   m_Layer: 14
   m_Name: seat
   m_TagString: Untagged
@@ -98,22 +97,6 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &6127382481608539318
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 680429549094693660}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3977a5e65e72f4db4b85ddba10d48dd4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  id:
-    value: 0
-  itemName: 
-  size: {x: 0, y: 0, z: 0}
 --- !u!1 &7569160315923118957
 GameObject:
   m_ObjectHideFlags: 0
@@ -123,12 +106,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1122748976264220941}
-  - component: {fileID: 6202469891485677626}
-  - component: {fileID: 6178885372706160750}
   - component: {fileID: 3321196912181539310}
-  - component: {fileID: 7556043764270696896}
-  - component: {fileID: 629861942175368161}
-  - component: {fileID: 7142604992278189007}
   - component: {fileID: 5923438931462926463}
   m_Layer: 14
   m_Name: seat_swing 1
@@ -154,40 +132,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &6202469891485677626
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7569160315923118957}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3977a5e65e72f4db4b85ddba10d48dd4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  id:
-    value: 0
-  itemName: "\u30D6\u30E9\u30F3\u30B3"
-  size: {x: 0, y: 0, z: 0}
---- !u!114 &6178885372706160750
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7569160315923118957}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 520c5dfac7764629b8b35cdc3a5f3e48, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  item: {fileID: 6202469891485677626}
-  seat: {fileID: 3231805073518789355}
-  exitTransform: {fileID: 0}
-  leftGrip: {fileID: 0}
-  rightGrip: {fileID: 0}
-  avatarOverrideAnimation: {fileID: 0}
 --- !u!54 &3321196912181539310
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -204,68 +148,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!114 &7556043764270696896
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7569160315923118957}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 557c1287071b147459bb6f001560c6e2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  item: {fileID: 6202469891485677626}
-  rb: {fileID: 3321196912181539310}
---- !u!114 &629861942175368161
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7569160315923118957}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 33965004378643619e0b2dc254df2434, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  ridableItem: {fileID: 6178885372706160750}
-  triggers:
-  - target: 4
-    specifiedTargetItem: {fileID: 0}
-    key: GetOnSwing
-    type: 0
-    value:
-      boolValue: 0
-      floatValue: 0
-      integerValue: 0
-      vector2Value: {x: 0, y: 0}
-      vector3Value: {x: 0, y: 0, z: 0}
---- !u!114 &7142604992278189007
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7569160315923118957}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 81094346ab6b46bda033923d025c6430, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  ridableItem: {fileID: 6178885372706160750}
-  triggers:
-  - target: 4
-    specifiedTargetItem: {fileID: 0}
-    key: GetOffSwing
-    type: 0
-    value:
-      boolValue: 0
-      floatValue: 0
-      integerValue: 0
-      vector2Value: {x: 0, y: 0}
-      vector3Value: {x: 0, y: 0, z: 0}
 --- !u!1773428102 &5923438931462926463
 ParentConstraint:
   m_ObjectHideFlags: 0
